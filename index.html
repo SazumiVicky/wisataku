@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WisataKu</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <a href="#" class="logo">
+                WSKU
+            </a>
+            <div class="menu">
+                <a href="#home" class="active"><i class="ri-home-line"></i> Beranda</a>
+                <a href="#dest"><i class="ri-map-pin-line"></i> Destinasi</a>
+                <a href="#book"><i class="ri-calendar-line"></i> Booking</a>
+                <a href="#rev"><i class="ri-star-line"></i> Review</a>
+                <a href="/login.html" class="btn-login"><i class="ri-user-line"></i> Masuk</a>
+            </div>
+            <i class="ri-menu-line toggle"></i>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="badge">✨ Jelajahi Indonesia</span>
+                <h1>Temukan Keindahan<br>Wisata Indonesia</h1>
+                <p>Nikmati pengalaman liburan terbaik dengan destinasi wisata pilihan dan pelayanan terpercaya</p>
+                <form class="search">
+                    <div class="search-box">
+                        <i class="ri-map-pin-line"></i>
+                        <input type="text" placeholder="Cari lokasi wisata...">
+                    </div>
+                    <div class="search-box">
+                        <i class="ri-calendar-line"></i>
+                        <input type="date" placeholder="Pilih tanggal">
+                    </div>
+                    <button type="submit" class="btn-search">
+                        <i class="ri-search-line"></i>
+                        Cari Wisata
+                    </button>
+                </form>
+                <div class="stats">
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Destinasi</p>
+                    </div>
+                    <div class="stat">
+                        <h3>10K+</h3>
+                        <p>Pelanggan</p>
+                    </div>
+                    <div class="stat">
+                        <h3>4.9</h3>
+                        <p>Rating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="dest" class="dest">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <span class="badge">Destinasi Populer</span>
+                    <h2>Temukan Tempat Wisata Terbaik</h2>
+                </div>
+                <p>Jelajahi berbagai destinasi wisata menarik di seluruh Indonesia</p>
+            </div>
+            <div class="filter">
+                <button class="active">Semua</button>
+                <button>Pantai</button>
+                <button>Gunung</button>
+                <button>Budaya</button>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1663060097347-7be568852b90?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wisata">
+                        <span class="badge-card">Pantai</span>
+                    </div>
+                    <div class="info">
+                        <div class="loc">
+                            <i class="ri-map-pin-line"></i>
+                            <span>Bali, Indonesia</span>
+                        </div>
+                        <h3>Pantai Kuta</h3>
+                        <p>Nikmati keindahan sunset di pantai terindah di Bali</p>
+                        <div class="card-footer">
+                            <div class="rate">
+                                <i class="ri-star-fill"></i>
+                                <span>4.8</span>
+                                <small>(2.5k review)</small>
+                            </div>
+                            <div class="price">
+                                <small>Mulai dari</small>
+                                <span>Rp 50K</span>
+                            </div>
+                        </div>
+                        <button class="btn-book" onclick="svikiBook(this)">
+                            <i class="ri-calendar-line"></i>
+                            <span>Booking Sekarang</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1565619109666-b8bfe0e95ceb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wisata">
+                        <span class="badge-card">Gunung</span>
+                    </div>
+                    <div class="info">
+                        <div class="loc">
+                            <i class="ri-map-pin-line"></i>
+                            <span>Jawa Timur</span>
+                        </div>
+                        <h3>Gunung Bromo</h3>
+                        <p>Saksikan sunrise spektakuler di kaldera Bromo</p>
+                        <div class="card-footer">
+                            <div class="rate">
+                                <i class="ri-star-fill"></i>
+                                <span>4.9</span>
+                                <small>(3.2k review)</small>
+                            </div>
+                            <div class="price">
+                                <small>Mulai dari</small>
+                                <span>Rp 75K</span>
+                            </div>
+                        </div>
+                        <button class="btn-book" onclick="svikiBook(this)">
+                            <i class="ri-calendar-line"></i>
+                            <span>Booking Sekarang</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://plus.unsplash.com/premium_photo-1700955004555-900a9733ee14?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wisata">
+                        <span class="badge-card">Budaya</span>
+                    </div>
+                    <div class="info">
+                        <div class="loc">
+                            <i class="ri-map-pin-line"></i>
+                            <span>Yogyakarta</span>
+                        </div>
+                        <h3>Candi Borobudur</h3>
+                        <p>Kunjungi warisan budaya UNESCO terbesar di dunia</p>
+                        <div class="card-footer">
+                            <div class="rate">
+                                <i class="ri-star-fill"></i>
+                                <span>4.9</span>
+                                <small>(5k review)</small>
+                            </div>
+                            <div class="price">
+                                <small>Mulai dari</small>
+                                <span>Rp 100K</span>
+                            </div>
+                        </div>
+                        <button class="btn-book" onclick="svikiBook(this)">
+                            <i class="ri-calendar-line"></i>
+                            <span>Booking Sekarang</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="book" class="book">
+        <div class="container">
+            <div class="book-content">
+                <div class="section-header">
+                    <span class="badge">Booking Mudah</span>
+                    <h2>Pesan Tiket Wisata Sekarang</h2>
+                    <p>Nikmati kemudahan booking tiket wisata dengan harga terbaik</p>
+                </div>
+                <form class="form">
+                    <div class="form-grid">
+                        <div class="input">
+                            <label>
+                                <i class="ri-map-pin-line"></i>
+                                Pilih Destinasi
+                            </label>
+                            <input type="text" placeholder="Cth: Pantai Kuta, Bali">
+                        </div>
+                        <div class="input">
+                            <label>
+                                <i class="ri-calendar-line"></i>
+                                Tanggal Kunjungan
+                            </label>
+                            <input type="date">
+                        </div>
+                        <div class="input">
+                            <label>
+                                <i class="ri-time-line"></i>
+                                Jam Kunjungan
+                            </label>
+                            <input type="time">
+                        </div>
+                        <div class="input">
+                            <label>
+                                <i class="ri-group-line"></i>
+                                Jumlah Pengunjung
+                            </label>
+                            <input type="number" placeholder="Jumlah orang" min="1">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i class="ri-calendar-check-line"></i>
+                        Pesan Sekarang
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="rev" class="rev">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Testimoni</span>
+                <h2>Apa Kata Mereka?</h2>
+                <p>Pengalaman liburan tak terlupakan dari pelanggan kami</p>
+            </div>
+            <div class="grid">
+                <div class="review-card">
+                    <div class="review-profile">
+                        <img src="https://images.unsplash.com/photo-1499557354967-2b2d8910bcca?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="User" loading="lazy">
+                        <div class="review-info">
+                            <h4>Sarah Amanda</h4>
+                            <p class="review-location">Pantai Kuta, Bali</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <div class="stars">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                        <span class="review-date">2 hari yang lalu</span>
+                    </div>
+                    <p class="review-text">"Pengalaman booking yang sangat mudah dan pelayanan yang memuaskan. Destinasi wisatanya juga luar biasa!"</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-profile">
+                        <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="User" loading="lazy">
+                        <div class="review-info">
+                            <h4>Budi Santoso</h4>
+                            <p class="review-location">Gunung Bromo</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <div class="stars">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                        <span class="review-date">1 minggu yang lalu</span>
+                    </div>
+                    <p class="review-text">"Sunrise di Bromo benar-benar memukau! Tour guide sangat ramah dan profesional. Recommended!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Siap Untuk Berpetualang?</h2>
+                <p>Bergabung sekarang dan dapatkan penawaran spesial untuk perjalanan pertama Anda</p>
+                <button class="btn-cta">
+                    <i class="ri-flight-takeoff-line"></i>
+                    Mulai Perjalanan
+                </button>
+                <div class="footer-credit">
+                    Powered by Viki with <i class="ri-heart-fill heart"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html> 

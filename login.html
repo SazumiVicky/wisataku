@@ -1,0 +1,91 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - WSKU</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <a href="index.html" class="logo">
+                WSKU
+            </a>
+            <div class="menu">
+                <a href="index.html"><i class="ri-home-line"></i> Beranda</a>
+                <a href="index.html#dest"><i class="ri-map-pin-line"></i> Destinasi</a>
+                <a href="index.html#book"><i class="ri-calendar-line"></i> Booking</a>
+                <a href="index.html#rev"><i class="ri-star-line"></i> Review</a>
+                <a href="login.html" class="btn-login active"><i class="ri-user-line"></i> Masuk</a>
+            </div>
+            <i class="ri-menu-line toggle"></i>
+        </div>
+    </nav>
+
+    <section class="login">
+        <div class="container">
+            <div class="login-container">
+                <div class="login-header">
+                    <h2>Selamat Datang Kembali!</h2>
+                    <p>Silakan masuk untuk melanjutkan perjalanan Anda</p>
+                </div>
+                <form class="login-form">
+                    <div class="input-group">
+                        <label>
+                            <i class="ri-mail-line"></i>
+                            Email
+                        </label>
+                        <input type="email" placeholder="Masukkan email Anda" required>
+                    </div>
+                    <div class="input-group">
+                        <label>
+                            <i class="ri-lock-line"></i>
+                            Password
+                        </label>
+                        <input type="password" placeholder="Masukkan password Anda" required>
+                        <i class="ri-eye-line toggle-password"></i>
+                    </div>
+                    <div class="login-options">
+                        <label class="remember">
+                            <input type="checkbox">
+                            <span>Ingat saya</span>
+                        </label>
+                        <a href="#" class="forgot-password">Lupa password?</a>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i class="ri-login-box-line"></i>
+                        Masuk
+                    </button>
+                </form>
+                <div class="login-divider">
+                    <span>atau masuk dengan</span>
+                </div>
+                <div class="social-login">
+                    <button class="btn-social google">
+                        <i class="ri-google-fill"></i>
+                        Google
+                    </button>
+                    <button class="btn-social facebook">
+                        <i class="ri-facebook-fill"></i>
+                        Facebook
+                    </button>
+                </div>
+                <p class="register-link">
+                    Belum punya akun? <a href="#">Daftar sekarang</a>
+                </p>
+            </div>
+            <div class="footer-credit">
+                Powered by Viki with <i class="ri-heart-fill heart"></i>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
